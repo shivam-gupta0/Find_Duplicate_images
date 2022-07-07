@@ -5,11 +5,6 @@ import os
 
 
 
-def rotate_img(image):
-    image = np.rot90(image, k=1, axes=(0, 1))
-    return image
-
-
 Folder_path = "Image_Folder_Path"
 Duplicate_Folder_Path = "Duplicate_Image_Folder_Path"
 
