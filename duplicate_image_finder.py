@@ -24,7 +24,7 @@ for im1 in img1:
 
             err = np.sum((matrix1.astype("float") - matrix2.astype("float")) ** 2)
             mse_score = err / float(matrix1.shape[0] * matrix1.shape[1])
-            if mse_score == 0:
+            if mse_score < 3000:
                 imgg1 = cv2.imread(im1)
                 height1, width1 = imgg1.shape[:2]
                 imgg2 = cv2.imread(im2)
